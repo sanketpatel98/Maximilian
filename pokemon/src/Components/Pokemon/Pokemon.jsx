@@ -2,7 +2,6 @@ import React from "react";
 import classes from "./Pokemon.module.css";
 
 export default function Pokemon({ pokemon }) {
-  console.log(pokemon.abilities[0].name);
   const borderStyle = {
     border: `5px solid ${getColor(pokemon.level)}`, // Adjust color and other border properties as needed
   };
@@ -46,23 +45,7 @@ export default function Pokemon({ pokemon }) {
     </div>
   );
 }
-// {
-//   id: 2,
-//   name: "Charmander",
-//   type: "Fire",
-//   level: 22,
-//   abilities: [
-//     { name: "Blaze", color: "red" },
-//     { name: "Solar Power", color: "red" }
-//   ],
-//   image: "https://assets.pokemon.com/assets/cms2/img/pokedex/full/004.png",
-//   weaknesses: ["Water", "Rock", "Ground"],
-//   threats: [
-//     { name: "Blastoise", image: "https://assets.pokemon.com/assets/cms2/img/pokedex/full/009.png" },
-//     { name: "Onix", image: "https://assets.pokemon.com/assets/cms2/img/pokedex/full/095.png" },
-//     { name: "Golem", image: "https://assets.pokemon.com/assets/cms2/img/pokedex/full/076.png" }
-//   ]
-// },
+
 function getColor(value) {
   const clampedValue = Math.max(1, Math.min(50, value));
   const hue = (1 - clampedValue / 50) * 120;
