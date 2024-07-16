@@ -15,11 +15,11 @@ export default function Pokemon({ pokemon }) {
             className={classes.pokemonImage}
           />
         </div>
-        <div className={classes.pokemon}>{pokemon.type}</div>
+        <div className={classes.pokemonName}>{pokemon.name}</div>
       </div>
       <div className={classes.rightColumn}> 
         <div className={classes.innerLeftColumn}>
-          <div className={classes.pokemonName}>{pokemon.name}</div>
+          <div className={classes.type}>{pokemon.type}</div>
           <div className={classes.pokemonAbilitiesContainer}>
             {pokemon.abilities &&
               pokemon.abilities.map((ability) => (
