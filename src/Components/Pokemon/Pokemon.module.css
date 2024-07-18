@@ -12,28 +12,25 @@
 }
 
 .leftColumn {
-  border: solid;
-  border-color: white;
-  border-radius: 10px;
   padding: 10px;
   flex: 1;
 }
 
 .rightColumn {
-  border-width: 5px;
-  border: solid;
-  border-color: white;
-  border-radius: 10px;
   display: flex;
   flex-direction: row;
   gap: 5px;
   padding: 10px;
-  flex: 2;
+  flex: 5;
 }
 
 .innerLeftColumn {
   flex: 3;
   align-content: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 10px;
 }
 
 .innerRightColumn {
@@ -87,5 +84,5 @@
 }
 
 .pokemonImage {
-  width: 50px;
+  width: 60px;
 }
