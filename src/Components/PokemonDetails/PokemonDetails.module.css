@@ -80,7 +80,7 @@
 }
 
 .pokemonName{
-    font-size: larger;
+    font-size: x-large;
     font-weight: bolder;
 }
 
@@ -88,3 +88,47 @@
     font-size: large;
     font-weight: bold;
 }
+
+.pokemonWeaknessContainer{
+  display: flex;
+  flex-direction: column;
+  padding: 25px;
+  gap: 20px;
+}
+
+.pokemonWeaknessesHeader{
+  font-size: large;
+  font-weight: bolder;
+}
+
+.pokemonWeaknessesList{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  gap: 20px;
+}
+
+.pokemonWeaknesses{
+  padding: 5px;
+  border-radius: 15%;
+}
+
+.pokemonThreatList{
+  /* background-color: aliceblue; */
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  gap: 30px;
+}
+
+.pokemonThreat{
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.pokemonThreatImg{
+  width: 100px;
+}
+

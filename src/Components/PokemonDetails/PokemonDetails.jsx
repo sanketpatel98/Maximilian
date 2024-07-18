@@ -39,12 +39,41 @@ export default function PokemonDetails({ pokemon }) {
           />
         </div>
       </div>
-      <div></div>
+      <hr />
+      <div className={classes.pokemonWeaknessContainer}>
+        <span className={classes.pokemonWeaknessesHeader}>Weaknesses</span>
+        <div className={classes.pokemonWeaknessesList}>
+          {pokemon.weaknesses &&
+            pokemon.weaknesses.map((weakness) => (
+              <div
+                className={classes.pokemonWeaknesses}
+                style={{
+                  backgroundColor: weakness.color,
+                  color: weakness.contrastColor,
+                }}
+              >
+                {weakness.type}
+              </div>
+            ))}
+        </div>
+        <div className={classes.pokemonThreatList}>
+          {pokemon.threats &&
+            pokemon.threats.map((thret) => (
+              <div className={classes.pokemonThreat}>
+                <img
+                  className={classes.pokemonThreatImg}
+                  src={thret.image}
+                ></img>
+                <span>{thret.name}</span>
+              </div>
+            ))}
+        </div>
+      </div>
     </div>
   );
 }
 function getColor(value) {
-    const clampedValue = Math.max(1, Math.min(50, value));
-    const hue = (1 - clampedValue / 50) * 120;
-    return `hsl(${hue}, 100%, 50%)`;
-  }
+  const clampedValue = Math.max(1, Math.min(50, value));
+  const hue = (1 - clampedValue / 50) * 120;
+  return `hsl(${hue}, 100%, 50%)`;
+}
