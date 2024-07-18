@@ -10,7 +10,7 @@ export default function Pokemon({ pokemon }) {
       <div className={classes.leftColumn}>
         <div className={classes.pokemon}>
           <img
-            src={pokemon.image}
+            src={pokemon.image} 
             alt={pokemon.name}
             className={classes.pokemonImage}
           />

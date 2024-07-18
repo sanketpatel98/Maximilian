@@ -56,15 +56,20 @@
   gap: 5px;
 }
 
+.type{
+  font-size: large;
+}
+
 .pokemonAbilityContainer{
   border-radius: 5px; 
   border: solid;
   border-width: 1px;
   border-color: rgb(182, 238, 238);
+  padding: 5px;
 }
 
 .pokemonName {
-  font-size: medium;
+  font-size: large;
   font-weight: bold;
 }
 
